@@ -3,34 +3,33 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>HPC Monitoring Documentation</title>
-        <meta name="robots" content="noindex" />
+        <title>Edge detection - HPC Monitoring Documentation</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
     </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -76,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="architecture/index.html"><strong aria-hidden="true">2.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="sensor-manager/index.html"><strong aria-hidden="true">3.</strong> Sensor Manager</a></li><li class="chapter-item expanded "><a href="virtual-sensor/index.html"><strong aria-hidden="true">4.</strong> Virtual Sensor</a></li><li class="chapter-item expanded "><a href="devops/index.html"><strong aria-hidden="true">5.</strong> Devops</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="devops/GithubWorkflow.html"><strong aria-hidden="true">5.1.</strong> Github workflows settings</a></li><li class="chapter-item expanded "><a href="devops/LXCContainer.html"><strong aria-hidden="true">5.2.</strong> Linux container (LXC)</a></li></ol></li><li class="chapter-item expanded "><a href="user-guides/index.html"><strong aria-hidden="true">6.</strong> User guides</a></li><li class="chapter-item expanded "><a href="test-convert-html-to-markdown/index.html"><strong aria-hidden="true">7.</strong> Edge detection</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../introduction/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../architecture/index.html"><strong aria-hidden="true">2.</strong> Architecture</a></li><li class="chapter-item expanded "><a href="../sensor-manager/index.html"><strong aria-hidden="true">3.</strong> Sensor Manager</a></li><li class="chapter-item expanded "><a href="../virtual-sensor/index.html"><strong aria-hidden="true">4.</strong> Virtual Sensor</a></li><li class="chapter-item expanded "><a href="../devops/index.html"><strong aria-hidden="true">5.</strong> Devops</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../devops/GithubWorkflow.html"><strong aria-hidden="true">5.1.</strong> Github workflows settings</a></li><li class="chapter-item expanded "><a href="../devops/LXCContainer.html"><strong aria-hidden="true">5.2.</strong> Linux container (LXC)</a></li></ol></li><li class="chapter-item expanded "><a href="../user-guides/index.html"><strong aria-hidden="true">6.</strong> User guides</a></li><li class="chapter-item expanded "><a href="../test-convert-html-to-markdown/index.html" class="active"><strong aria-hidden="true">7.</strong> Edge detection</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -108,7 +107,7 @@
                     <h1 class="menu-title">HPC Monitoring Documentation</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                     </div>
@@ -135,239 +134,71 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>From a thesis in <a href="https://hcmut.edu.vn/">Ho Chi Minh University of Technology</a> ...</p>
-<p>Hello world !</p>
-<h2 id="our-hpc-system-problem"><a class="header" href="#our-hpc-system-problem">Our HPC system problem</a></h2>
-<p>Specify problems in HCMUT's HPC system, its user story, demands ...</p>
-<h2 id="why-this-project"><a class="header" href="#why-this-project">Why this project</a></h2>
-<p>Should compare to other monitoring tools such as <code>Zabbix</code>, <code>Prometheus</code> ...</p>
-<p>Which problems do this project resolve ? ...</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="system-architecture"><a class="header" href="#system-architecture">System Architecture</a></h1>
-<p><img src="architecture/./../assets/architecture.png" alt="Architecture" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="sensor-manager"><a class="header" href="#sensor-manager">Sensor manager</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="virtual-sensor"><a class="header" href="#virtual-sensor">Virtual Sensor</a></h1>
-<p>Virtual sensor descriptions.</p>
-<h2 id="helpful-libraries"><a class="header" href="#helpful-libraries">Helpful libraries</a></h2>
-<ul>
-<li><a href="https://github.com/nlohmann/json">JSON in modern C++</a></li>
-<li><a href="https://www.boost.org/">Boost C++ Libraries</a></li>
-<li><a href="https://docs.confluent.io/kafka-clients/librdkafka/current/overview.html">Kafka Client</a></li>
-</ul>
-<h2 id="data-collection"><a class="header" href="#data-collection">Data collection</a></h2>
-<h3 id="payloads-content-interfaces"><a class="header" href="#payloads-content-interfaces">Payload's content interfaces</a></h3>
-<pre><code class="language-typescript">interface Process {
-    name: string;
-    pid: number
-    parentPid: number
-    uid: number
-    gid: number
-    executePath: string
-    command: string
-    virtualMemoryUsage: number  // In KB
-    physicalMemoryUsage: number // In KB
-    cpuTime: number             // In ms
-    cpuUsage: number            // In %
-    networkInBandwidth: number  // What interface ???
-    networkOutBandwidth: number
-    ioWrite: number             // In KB
-    ioRead: number              // In KB
-}
-
-interface NetworkInterface {
-    name: string
-    inBandwidth: number
-    outBandwidth: number
-}
-
-interface Memory {
-    used: number
-    available: number
-    swapUsed?: number
-    swapFree?: number
-}
-
-interface Cpu {
-    user: number
-    nice: number
-    system: number
-    iowait: number
-    steal: number
-    idle: number
-}
-
-interface IOUsage {
-    deviceName: string
-    readPerSecond: number
-    writePerSecond: number
-}
-
-interface DiskUsage {
-    filesystemName: string
-    used: number // In KB
-    available: number // In KB
-}
-</code></pre>
-<h3 id="full-payload-interface"><a class="header" href="#full-payload-interface">Full payload interface</a></h3>
-<pre><code class="language-typescript">interface KafkaMessage {
-    nodeId: number
-    timestamp: number
-    payload: Process[] | NetworkInterface[] | Memory | Cpu | IOUsage | DiskUsage
-    type: 'PROCESS' | 'NETWORK_INTERFACE' | 'MEMORY' | 'CPU' | 'IO_USAGE' | 'DISK_USAGE'
-}
-</code></pre>
-<h3 id="data-in-namespace"><a class="header" href="#data-in-namespace">Data in namespace</a></h3>
-<p>Note that a process runs in container such as <code>Docker</code>, <code>LXC</code> ... or runs in a VM has its own namespace.</p>
-<h3 id="sample-data-from-procpidnetdev-file"><a class="header" href="#sample-data-from-procpidnetdev-file">Sample data from <code>/proc/$PID/net/dev</code> file</a></h3>
-<table><thead><tr><th>Interface name</th><th>Receive</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th>Transmit</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody>
-<tr><td></td><td>bytes</td><td>packets</td><td>errs</td><td>drop</td><td>fifo</td><td>frame</td><td>compressed</td><td>multicast</td><td>bytes</td><td>packets</td><td>errs</td><td>drop</td><td>fifo</td><td>colls</td><td>carrier</td><td>compressed</td></tr>
-<tr><td>lo</td><td>2469224</td><td>19558</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2469224</td><td>19558</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-</tbody></table>
-<h2 id="helpful-tools"><a class="header" href="#helpful-tools">Helpful tools</a></h2>
-<p>Some useful command lines:</p>
-<ul>
-<li><code>sysstat</code></li>
-<li><code>df</code></li>
-<li><code>free</code></li>
-</ul>
-<h2 id="build-systemd-service"><a class="header" href="#build-systemd-service">Build <code>systemd</code> service</a></h2>
-<p><a href="https://www.tecmint.com/create-systemd-service-linux/">https://www.tecmint.com/create-systemd-service-linux/</a></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="appendix"><a class="header" href="#appendix">Appendix</a></h1>
-<p>The following sections show how to deploy &amp; operate the entire system.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="github-workflows-settings"><a class="header" href="#github-workflows-settings">Github workflows settings</a></h1>
-<p>We recommend to run github runners inside <a href="https://linuxcontainers.org/lxc/introduction/">Linux container</a> (<code>LXC</code>).</p>
-<p>For details about self-hosted github runners, visit <a href="https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners">https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners</a>.</p>
-<p>For LXC installation and usage, you can visit our guides <a href="devops/./LXCContainer.html">here</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="linux-container-lxc"><a class="header" href="#linux-container-lxc">Linux container (LXC)</a></h1>
-<h2 id="install-lxc"><a class="header" href="#install-lxc">Install LXC</a></h2>
-<p>Full documentation about installation goes <a href="https://linuxcontainers.org/lxc/getting-started">here</a>.
-For security reasons, we create an unprivileged container as a user by these following steps:</p>
-<h3 id="init-configurations"><a class="header" href="#init-configurations">Init configurations</a></h3>
-<pre><code class="language-bash">mkdir -p ~/.config/lxc
-cp /etc/lxc/default.conf ~/.config/lxc/default.conf
-MS_UID=&quot;$(grep &quot;$(id -un)&quot; /etc/subuid  | cut -d : -f 2)&quot;
-ME_UID=&quot;$(grep &quot;$(id -un)&quot; /etc/subuid  | cut -d : -f 3)&quot;
-MS_GID=&quot;$(grep &quot;$(id -un)&quot; /etc/subgid  | cut -d : -f 2)&quot;
-ME_GID=&quot;$(grep &quot;$(id -un)&quot; /etc/subgid  | cut -d : -f 3)&quot;
-echo &quot;lxc.idmap = u 0 $MS_UID $ME_UID&quot; &gt;&gt; ~/.config/lxc/default.conf
-echo &quot;lxc.idmap = g 0 $MS_GID $ME_GID&quot; &gt;&gt; ~/.config/lxc/default.conf
-</code></pre>
-<h3 id="download-container"><a class="header" href="#download-container">Download container</a></h3>
-<p>Run this command to start download:</p>
-<pre><code class="language-bash">systemd-run --unit=hpc-unit --user --scope -p &quot;Delegate=yes&quot; -- lxc-create -t download -n hpc-container
-</code></pre>
-<p>Then, the console will print list of distibution, choose distribution <code>centos</code>, release <code>7</code> and host computer's architecture. After downloading successful, your terminal should print result like this:</p>
-<pre><code class="language-script">Downloading the image index
-
----
-DIST        RELEASE ARCH    VARIANT BUILD
----
-almalinux   8       amd64   default 20230123_23:10
-almalinux   8       arm64   default 20230123_23:14
-almalinux   8       ppc64el default 20230123_23:08
-..... Other distribution
----
-
-Distribution: 
-centos
-Release: 
-7
-Architecture: 
-amd64
-
-Downloading the image index
-Downloading the rootfs
-Downloading the metadata
-The image cache is now ready
-Unpacking the rootfs
-
----
-You just created a Centos 7 x86_64 (20230123_22:38) container.
-</code></pre>
-<h3 id="start-container"><a class="header" href="#start-container">Start container</a></h3>
-<p>Run lxc container with allocating an empty delegated cgroup:</p>
-<pre><code class="language-bash">systemd-run --unit=hpc-unit --user --scope -p &quot;Delegate=yes&quot; -- lxc-start hpc-container
-</code></pre>
-<p>To confirm its status:</p>
-<pre><code class="language-bash">lxc-info -n my-container
-lxc-ls -f
-</code></pre>
-<p>And get a shell inside it with:</p>
-<pre><code class="language-bash">lxc-attach -n hpc-container
-</code></pre>
-<p>Stopping it can be done with:</p>
-<pre><code class="language-bash">lxc-stop -n my-container
-</code></pre>
-<p>And finally removing it with:</p>
-<pre><code class="language-bash">lxc-destroy -n my-container
-</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="user-guide"><a class="header" href="#user-guide">User guide</a></h1>
-<p>User guide here ... (Web UI, how to interact ...)</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id=""><a class="header" href="#"><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/edge_detection-intro.png" alt="" /></a></h1>
+                        <h1 id=""><a class="header" href="#"><img src="images/2023/knowledge_sharing/edge_detection-intro.png" alt="" /></a></h1>
 <p>Người viết: Đặng Ngọc Bảo Trâm</p>
 <h2 id="mục-lục"><a class="header" href="#mục-lục">Mục lục</a></h2>
 <ol>
-<li><a href="test-convert-html-to-markdown/index.html#mot_vai_khai_niem">Một vài khái niệm</a>
+<li><a href="#mot_vai_khai_niem">Một vài khái niệm</a>
 <ol>
-<li><a href="test-convert-html-to-markdown/index.html#anh_trang_den">Ảnh trắng đen (grayscale image)</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#cach_danh_chi_so_cac_pixel">Cách đánh chỉ số các pixel</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#phep_tich_chap">Phép tích chập (convolution)</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#canh_va_cac_nguyen_nhan_tao_thanh_canh">Cạnh và các nguyên nhân tạo thành cạnh</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#cac_khai_niem_khac">Các khái niệm khác</a></li>
+<li><a href="#anh_trang_den">Ảnh trắng đen (grayscale image)</a></li>
+<li><a href="#cach_danh_chi_so_cac_pixel">Cách đánh chỉ số các pixel</a></li>
+<li><a href="#phep_tich_chap">Phép tích chập (convolution)</a></li>
+<li><a href="#canh_va_cac_nguyen_nhan_tao_thanh_canh">Cạnh và các nguyên nhân tạo thành cạnh</a></li>
+<li><a href="#cac_khai_niem_khac">Các khái niệm khác</a></li>
 </ol>
 </li>
-<li><a href="test-convert-html-to-markdown/index.html#phuong_phap_dao_ham_cap_mot_cho_bai_toan_nhan_dien_canh">Phương pháp đạo hàm cấp một cho bài toán nhận diện cạnh</a>
+<li><a href="#phuong_phap_dao_ham_cap_mot_cho_bai_toan_nhan_dien_canh">Phương pháp đạo hàm cấp một cho bài toán nhận diện cạnh</a>
 <ol>
-<li><a href="test-convert-html-to-markdown/index.html#xap_xi_dao_ham">Xấp xỉ đạo hàm</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#mot_so_toan_tu_pho_bien_su_dung_dao_dam_cap_mot">Một số toán tử phổ biến sử dụng đạo hàm cấp một</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#anh_huong_cua_do_lon_kernel_den_kha_nang_nhan_dien_canh">Ảnh hưởng của độ lớn kernel đến khả năng nhận diện cạnh</a></li>
+<li><a href="#xap_xi_dao_ham">Xấp xỉ đạo hàm</a></li>
+<li><a href="#mot_so_toan_tu_pho_bien_su_dung_dao_dam_cap_mot">Một số toán tử phổ biến sử dụng đạo hàm cấp một</a></li>
+<li><a href="#anh_huong_cua_do_lon_kernel_den_kha_nang_nhan_dien_canh">Ảnh hưởng của độ lớn kernel đến khả năng nhận diện cạnh</a></li>
 </ol>
 </li>
-<li><a href="test-convert-html-to-markdown/index.html#cac_buoc_cua_mot_thuat_toan_nhan_dien_canh">Các bước của một thuật toán nhận diện cạnh</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#phuong_phap_dao_ham_cap_hai_cho_bai_toan_nhan_dien_canh">Phương pháp đạo hàm cấp hai cho bài toán nhận diện cạnh</a>
+<li><a href="#cac_buoc_cua_mot_thuat_toan_nhan_dien_canh">Các bước của một thuật toán nhận diện cạnh</a></li>
+<li><a href="#phuong_phap_dao_ham_cap_hai_cho_bai_toan_nhan_dien_canh">Phương pháp đạo hàm cấp hai cho bài toán nhận diện cạnh</a>
 <ol>
-<li><a href="test-convert-html-to-markdown/index.html#toan_tu_laplacian">Toán tử Laplacian</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#dao_ham_cap_hai_co_huong">Đạo hàm cấp hai có hướng</a></li>
+<li><a href="#toan_tu_laplacian">Toán tử Laplacian</a></li>
+<li><a href="#dao_ham_cap_hai_co_huong">Đạo hàm cấp hai có hướng</a></li>
 </ol>
 </li>
-<li><a href="test-convert-html-to-markdown/index.html#phuong_phap_tim_canh_tren_anh_nhieu">Phương pháp tìm cạnh trên ảnh nhiễu</a>
+<li><a href="#phuong_phap_tim_canh_tren_anh_nhieu">Phương pháp tìm cạnh trên ảnh nhiễu</a>
 <ol>
-<li><a href="test-convert-html-to-markdown/index.html#anh_huong_cua_nhieu_den_dao_ham">Ảnh hưởng của nhiễu đến đạo hàm</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#laplacian_cua_gaussian">Đạo hàm của Gaussian (Derivative of Gaussian)</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#laplacian_cua_gaussian">Laplacian của Gaussian (Laplacian of Gaussian - LoG)</a></li>
+<li><a href="#anh_huong_cua_nhieu_den_dao_ham">Ảnh hưởng của nhiễu đến đạo hàm</a></li>
+<li><a href="#laplacian_cua_gaussian">Đạo hàm của Gaussian (Derivative of Gaussian)</a></li>
+<li><a href="#laplacian_cua_gaussian">Laplacian của Gaussian (Laplacian of Gaussian - LoG)</a></li>
 </ol>
 </li>
-<li><a href="test-convert-html-to-markdown/index.html#canny_edge_detector">Canny Edge Detector</a>
+<li><a href="#canny_edge_detector">Canny Edge Detector</a>
 <ol>
-<li><a href="test-convert-html-to-markdown/index.html#non-maxima_suppression">Non-maxima suppression</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#hysteresis_thresholding">Hysteresis thresholding</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#thuat_toan_canny_edge_detection">Thuật toán Canny Edge Detection</a></li>
+<li><a href="#non-maxima_suppression">Non-maxima suppression</a></li>
+<li><a href="#hysteresis_thresholding">Hysteresis thresholding</a></li>
+<li><a href="#thuat_toan_canny_edge_detection">Thuật toán Canny Edge Detection</a></li>
 </ol>
 </li>
-<li><a href="test-convert-html-to-markdown/index.html#h27sll1tvlqs1iujizb1bhecq210amjfc">Kết luận</a></li>
-<li><a href="test-convert-html-to-markdown/index.html#h54sll1tvye91ug6bgk1ful5pf83qr2p">Tham khảo</a></li>
+<li><a href="#h27sll1tvlqs1iujizb1bhecq210amjfc">Kết luận</a></li>
+<li><a href="#h54sll1tvye91ug6bgk1ful5pf83qr2p">Tham khảo</a></li>
 </ol>
 <h2 id="0-dẫn-nhập"><a class="header" href="#0-dẫn-nhập">0. Dẫn nhập</a></h2>
 <p>Trong giai đoạn đầu của quá trình xử lý ảnh, chúng ta mong muốn đúc kết ra những thông tin về cấu trúc cũng như tính chất của các vật thể trong ảnh. Để làm được điều này, việc tìm ra những đặc trưng cơ bản (feature) của các vật thể này là cần thiết. Cạnh (edge) là một trong những đặc trưng này. Chúng ta cùng quan sát hai bức ảnh sau:<br />
-<img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Henry_Moore_The_Archer_sketch.png" alt="" /></p>
-<p><em>Hình 1: Bên trái: Ảnh chụp bức tượng The Archer của Henry Moore (1964). Bên phải: Bản phác thảo của bức tượng này. Ảnh tham khảo từ <a href="test-convert-html-to-markdown/index.html#h54sll1tvye91ug6bgk1ful5pf83qr2p">[4]</a>.</em></p>
+<img src="images/2023/knowledge_sharing/Henry_Moore_The_Archer_sketch.png" alt="" /></p>
+<p><em>Hình 1: Bên trái: Ảnh chụp bức tượng The Archer của Henry Moore (1964). Bên phải: Bản phác thảo của bức tượng này. Ảnh tham khảo từ <a href="#h54sll1tvye91ug6bgk1ful5pf83qr2p">[4]</a>.</em></p>
 <p>Tuy đã giản lược rất nhiều chi tiết và chỉ lưu lại những đường nét nổi bật nhất, bức ảnh bên phải vẫn bảo toàn được một lượng thông tin đủ để giúp ta hình dung được một cách dễ dàng kết cấu và một vài đặc điểm nhất định của vật thể trong bức ảnh gốc. Do vậy, nhận diện cạnh thường là một trong những bước đầu tiên của quá trình khôi phục thông tin từ một bức ảnh. Cũng bởi vai trò quan trọng này nên bài toán nhận diện cạnh vẫn tiếp tục là một lĩnh vực được nghiên cứu được quan tâm rộng rãi. Trong bài viết này, chúng ta sẽ cùng nhau tìm hiểu những khái niệm cơ bản liên quan đến bài toán nhận diện cạnh, các vấn đề thường gặp trong bài toán này cũng như những thuật toán nhận diện cạnh thông dụng.</p>
 <h2 id="1-một-vài-khái-niệm"><a class="header" href="#1-một-vài-khái-niệm">1. Một vài khái niệm</a></h2>
 <h3 id="11-Ảnh-trắng-đen-grayscale-image"><a class="header" href="#11-Ảnh-trắng-đen-grayscale-image">1.1. Ảnh trắng đen (grayscale image)</a></h3>
 <p>Bài viết này chỉ sử dụng ảnh grayscale làm minh họa cho bài toán nhận diện cạnh. Ảnh grayscale được sử dụng có giá trị pixel dao động trong khoảng từ 0 đến 255 với 0 là màu đen và 255 là màu trắng, các giá trị ở giữa là những sắc thái xám khác nhau được pha trộn theo một tỉ lệ nhất định hai màu đen và trắng này. Các giá trị của pixel được gọi là mức độ xám (gray level), giá trị này trong một số tài liệu cũng được gọi là cường độ ảnh (image intensity) hay cường độ (intensity).</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Grayscale_Color_Spectrum.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Grayscale_Color_Spectrum.png" alt="" /></p>
 <p><em>Hình 2: Dãy màu cho ảnh grayscale (để ý rằng giá trị của pixel càng thấp có màu ngả sang đen nhiều hơn và ngược lại). Ảnh tham khảo <a href="https://cs.calvin.edu/activities/connect/CompRenew/03programming/01programming.html">tại đây</a>.</em></p>
 <h3 id="12-cách-đánh-chỉ-số-các-pixel"><a class="header" href="#12-cách-đánh-chỉ-số-các-pixel">1.2. Cách đánh chỉ số các pixel</a></h3>
 <p>Trong mặt phẳng ảnh, ta thường đặt gốc tọa độ ở trung tâm, tia Ox hướng từ trái sang phải và tia Oy hướng từ dưới lên trên. Tuy nhiên khi số hóa thì bức ảnh được biểu diễn bằng một mảng 2 chiều, trong đó mỗi phần tử lưu giá trị của pixel ở vị trí tương ứng. Lưu ý rằng để làm việc với một bức ảnh, ta cần chuyển bức ảnh này thành dạng số, lúc này bức ảnh không còn giữ được tính &quot;liên tục&quot; của nó nữa mà bị &quot;lượng hóa&quot; (quantized) thành các đơn vị nhỏ gọi là các pixel. Thông thường người ta đánh chỉ số các pixel như sau: mỗi pixel có chỉ số $[i,j]$, trong đó $i$ tăng dần từ trái sang phải, $j$ tăng dần từ trên xuống dưới, pixel trên cùng bên trái có chỉ số $[0,0]$.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Pixel_Indexing.png" alt="" /></p>
-<p><em>Hình 3: Một điểm trên mặt phẳng ảnh và pixel tương ứng biểu diễn điểm ảnh ấy (lưu ý rằng nhiều điểm ảnh có thể được biểu diễn bởi một pixel duy nhất). Ảnh tham khảo từ <a href="test-convert-html-to-markdown/index.html#h54sll1tvye91ug6bgk1ful5pf83qr2p">[1]</a>.</em></p>
+<p><img src="images/2023/knowledge_sharing/Pixel_Indexing.png" alt="" /></p>
+<p><em>Hình 3: Một điểm trên mặt phẳng ảnh và pixel tương ứng biểu diễn điểm ảnh ấy (lưu ý rằng nhiều điểm ảnh có thể được biểu diễn bởi một pixel duy nhất). Ảnh tham khảo từ <a href="#h54sll1tvye91ug6bgk1ful5pf83qr2p">[1]</a>.</em></p>
 <h3 id="13-phép-tích-chập-convolution"><a class="header" href="#13-phép-tích-chập-convolution">1.3. Phép tích chập (convolution)</a></h3>
-<p>Phép tích chập có quan hệ mật thiết đến phép tương quan chéo (cross correlation). Trong phép tương quan chéo, ta có một hạt nhân (kernel) với một phần tử trung tâm (center) và một mảng đầu vào, lần lượt trượt kernel từ góc trên cùng bên trái của mảng đầu vào theo chiều từ trái sang phải, từ trên xuống dưới. Tại mỗi phần tử của mảng đầu vào mà trung tâm kernel này trượt đến, giá trị của phần tử này được tính bằng cách nhân giá trị mỗi phần tử trong kernel với giá trị phần tử tại vị trí tương ứng của mảng đầu vào, rồi lấy tổng các giá trị này [3]. Trong phép tích chập, ta cần xoay kernel 180 độ trước khi thực hiện quá trình trên. Bạn đọc có thể tìm hiểu kĩ hơn về khái niệm này qua bài viết <a href="test-convert-html-to-markdown/newest-tutorial/cse/mtcntt-chiasekienthuc/m-ng-no-ron-tich-ch-p-convolutional-neural-network-cnn-convnet"><strong>Mạng nơ-ron tích chập - Convolutional Neural Network (CNN/ConvNet)</strong></a>, phần 2.1 viết về Lớp tích chập (Convolutional layer).</p>
+<p>Phép tích chập có quan hệ mật thiết đến phép tương quan chéo (cross correlation). Trong phép tương quan chéo, ta có một hạt nhân (kernel) với một phần tử trung tâm (center) và một mảng đầu vào, lần lượt trượt kernel từ góc trên cùng bên trái của mảng đầu vào theo chiều từ trái sang phải, từ trên xuống dưới. Tại mỗi phần tử của mảng đầu vào mà trung tâm kernel này trượt đến, giá trị của phần tử này được tính bằng cách nhân giá trị mỗi phần tử trong kernel với giá trị phần tử tại vị trí tương ứng của mảng đầu vào, rồi lấy tổng các giá trị này [3]. Trong phép tích chập, ta cần xoay kernel 180 độ trước khi thực hiện quá trình trên. Bạn đọc có thể tìm hiểu kĩ hơn về khái niệm này qua bài viết <a href="newest-tutorial/cse/mtcntt-chiasekienthuc/m-ng-no-ron-tich-ch-p-convolutional-neural-network-cnn-convnet"><strong>Mạng nơ-ron tích chập - Convolutional Neural Network (CNN/ConvNet)</strong></a>, phần 2.1 viết về Lớp tích chập (Convolutional layer).</p>
 <p>Ở những phần tiếp theo có sử dụng phép tích chập, ta mặc định rằng các kernel sử dụng đã được xoay 180 độ.</p>
 <h3 id="14-cạnh-và-các-nguyên-nhân-tạo-thành-cạnh"><a class="header" href="#14-cạnh-và-các-nguyên-nhân-tạo-thành-cạnh">1.4. Cạnh và các nguyên nhân tạo thành cạnh</a></h3>
 <p>Cạnh được định nghĩa là sự thay đổi cường độ ảnh một cách đột ngột và đáng kể.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Connecting_Rod_Edge_Checking_ver2.png" alt="" /></p>
-<p><em>Hình 4: Hình a: Ảnh của đầu một thanh truyền. Hình b: Đồ thị biểu diễn mức độ xám của mỗi pixel trong dãy pixel nằm trên đường màu đỏ. Ảnh tham khảo từ <a href="test-convert-html-to-markdown/index.html#h54sll1tvye91ug6bgk1ful5pf83qr2p">[1].</a></em></p>
+<p><img src="images/2023/knowledge_sharing/Connecting_Rod_Edge_Checking_ver2.png" alt="" /></p>
+<p><em>Hình 4: Hình a: Ảnh của đầu một thanh truyền. Hình b: Đồ thị biểu diễn mức độ xám của mỗi pixel trong dãy pixel nằm trên đường màu đỏ. Ảnh tham khảo từ <a href="#h54sll1tvye91ug6bgk1ful5pf83qr2p">[1].</a></em></p>
 <p>Dựa vào đồ thị, ta thấy rằng mức độ xám của pixel trong những <em><strong>ô màu xanh lam</strong></em> có sự thay đổi đột ngột nhưng không đáng kể. Chỉ có mức độ xám của các pixel trong các <em><strong>ô màu xanh lục</strong></em> là thay đổi vừa đáng kể, vừa đột ngột. Do vậy, chỉ có những sự thay đổi trong các ô màu xanh lục mới được nhận diện là cạnh (lưu ý rằng trong đồ thị có nhiều chỗ biễu diễn cạnh, mình chỉ lấy ví dụ ở hai chỗ), còn sự thay đổi ở những ô màu xanh lam chỉ là nhiễu (noise).</p>
 <p>Với định nghĩa này, ta thấy rằng cạnh tạo ra dựa trên sự thay đổi của cường độ ảnh không nhất thiết phải tương ứng với cạnh thực tế của vật thể. Vậy thì các cạnh này thường được tạo thành do đâu?</p>
 <p>Bốn nguyên nhân phổ biến tạo nên cạnh là:</p>
@@ -378,7 +209,7 @@ lxc-ls -f
 <li>Sự không liên tục về ánh sáng (Illumination discontinuity): Trong nhiều trường hợp, vật thể sẽ ngăn một lượng ánh sáng nhất định, tạo thành bóng. Sự thay đổi đột ngột về mức độ xám của pixel giữa vùng bị hắt bóng và vùng không bị hắt bóng dẫn đến việc tạo thành cạnh giữa hai vùng này.</li>
 </ul>
 <p>Hình dưới đây giúp bạn đọc hình dung rõ hơn về các nguyên nhân này:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Causes_of_edge.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Causes_of_edge.png" alt="" /></p>
 <p><em>Hình 5: Các nguyên nhân tạo thành cạnh (các đường <strong>màu xanh lam</strong> là những cạnh tạo thành do sự không liên tục về định hướng bề mặt, các đường <strong>màu vàng</strong> là những cạnh tạo thành do sự không liên tục về độ phản xạ của bề mặt, các đường <strong>màu xanh lục</strong> là những cạnh tạo thành do sự không liên tục về ánh sáng, các đường <strong>màu đỏ</strong> là những cạnh tạo thành do sự không liên tục về độ sâu). Ảnh tham khảo <a href="https://arxiv.org/pdf/2108.00616v1.pdf">tại đây</a>.</em></p>
 <h3 id="15-các-khái-niệm-khác"><a class="header" href="#15-các-khái-niệm-khác">1.5. Các khái niệm khác:</a></h3>
 <p>Ngoài những khái niệm trên thì có một vài khái niệm mà mình cho rằng sẽ cần thiết cho bạn đọc ở những phần sau:</p>
@@ -389,7 +220,7 @@ lxc-ls -f
 </ul>
 <h2 id="2-phương-pháp-đạo-hàm-cấp-một-cho-bài-toán-nhận-diện-cạnh"><a class="header" href="#2-phương-pháp-đạo-hàm-cấp-một-cho-bài-toán-nhận-diện-cạnh">2. Phương pháp đạo hàm cấp một cho bài toán nhận diện cạnh</a></h2>
 <p>Ở trên chúng ta đã có định nghĩa về cạnh, là sự thay đổi đột ngột và đáng kể về mức độ xám của các pixel trong ảnh. Sự thay đổi ấy nhắc ta nhớ đến khái niệm gì trong toán học nhỉ? Đúng rồi, là đạo hàm! Chúng ta cùng nhau quan sát bức hình dưới đây:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/First_Derivative.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/First_Derivative.png" alt="" /></p>
 <p><em>Hình 6: Hình 1: Dãy các pixel được xét. Hình 2: Đồ thị biểu diễn mức độ xám của mỗi pixel trong dãy. Hình 3: Đạo hàm cấp một của hàm số biểu diễn bởi đồ thị thứ nhất. Ảnh tham khảo <a href="http://www.cs.toronto.edu/%7Efidler/slides/2015/CSC420/lecture3.pdf">tại đây</a>.</em></p>
 <p>Trong bức ảnh trên, ta không xét toàn bộ ảnh mà chỉ xét dãy các pixel nằm trên đường kẻ màu đỏ (xem bức ảnh có 1 chiều). Ở đồ thị thứ nhất, ta nhận thấy có hai chỗ mức độ xám thay đổi đột ngột, tương ứng với hai lần các pixel trên đường kẻ màu đỏ chuyển màu từ trắng sang đen và từ đen sang trắng, đó cũng chính là vị trí của hai cạnh. Đồ thị thứ hai biểu diễn đạo hàm cấp một của hàm số biểu diễn bởi đồ thị thứ nhất. Đến đây nếu như bạn thắc mắc rằng: những giá trị của các pixel là rời rạc, thế thì vì sao lại có đạo hàm? Ở đây, chúng ta xem như giá trị của dãy các pixel nằm trên đường màu đỏ được mô tả bởi một hàm số, và bởi vì hàm số này liên tục nên nó có đạo hàm. Trên thực tế, ta không cần phải mô hình hóa giá trị của các pixel bởi một hàm số mà có thể xấp xỉ đạo hàm của chúng một cách rời rạc. Bạn đọc sẽ được tìm hiểu kĩ hơn về cách xấp xỉ đạo hàm ở phần dưới.</p>
 <p>Trong không gian 2 chiều thì gradient tại một điểm là một vector</p>
@@ -435,9 +266,9 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
 <p>$$ s_x = \begin{bmatrix} -1 &amp; 0 &amp; 1 \\ -2 &amp; 0 &amp; 2 \\ -1 &amp; 0 &amp; 1\\ \end{bmatrix} \qquad \qquad s_y = \begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 0 &amp; 0 &amp; 0 \\ -1 &amp; -2 &amp; -1\\ \end{bmatrix} $$</p>
 <p>Ta có nhận xét rằng toán tử Sobel xấp xỉ được đạo hàm tại điểm nằm trong pixel trung tâm như đã nói ở trên, đồng thời toán tử này đặt trọng số cao cho những pixel nằm gần trung tâm hơn nên nó còn có tác dụng khử nhiễu. Vì vậy toán tử Sobel là một trong những toán tử dùng để tính gradient được sử dụng phổ biến nhất.</p>
 <p>Kết quả áp dụng toán tử Sobel:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Original_Grayscale.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Original_Grayscale.png" alt="" /></p>
 <p><em>Hình 7: Ảnh gốc đã được chuyển sang dạng grayscale.</em></p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Sobel_Operator_result.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Sobel_Operator_result.png" alt="" /></p>
 <p><em>Hình 8: Hình 1, 2: Kết quả thu được sau khi áp dụng 2 kernel $s_x$, $s_y$ lên ảnh gốc. Hình 3: Kết quả thu được sau khi tính độ lớn gradient tại mỗi pixel trong ảnh. Hình 4: Kết quả thu được sau khi phân ngưỡng hình 3 với ngưỡng T = 100.</em></p>
 <p>Lưu ý rằng khi dùng kernel để tính đạo hàm tại mỗi pixel, giá trị thu được có thể là âm hoặc dương, để có thể biểu diễn kết quả này dưới dạng ảnh grayscale (ảnh mà giá trị các pixel nằm trong khoảng từ 0 đến 255), ta dùng một phép ánh xạ chuyển giá trị nhỏ nhất (lúc này là một số âm) thành 0 và giá trị lớn nhất thành 255. Vì vậy ta quan sát thấy bức ảnh thu được đa phần có màu xám vì đa số giá trị đạo hàm nằm ở khoảng giữa hai giá trị này, những đường màu đen là những vị trí mà tại đó giá trị đạo hàm đạt cực tiểu, những đường màu trắng là những vị trí mà tại đó giá trị đạo hàm đạt cực đại.</p>
 <p>Bức ảnh thứ ba biểu diễn độ lớn gradient tại mỗi pixel, thu được bằng cách lấy căn của tổng bình phương giá trị pixel tương ứng ở hai bức hình trên (lúc chưa scale). Bức ảnh cuối cùng là kết quả thu được sau khi phân ngưỡng bức ảnh thứ ba, các pixel được nhận diện là cạnh có màu trắng, ngược lại có màu đen (việc phân ngưỡng này sẽ được nói rõ hơn ở mục 3).</p>
@@ -459,7 +290,7 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
 <p>Sau bước 2, ta thu được một bức ảnh với giá trị mỗi pixel là độ lớn đạo của gradient tại pixel đó. Đây chưa phải là đầu ra mà chúng ta mong muốn. Như đã nói ở trên, những pixel có độ lớn gradient lớn thì mới là cạnh, còn những pixel mà tại đó có sự thay đổi đạo hàm nhưng không đáng kể thì chỉ là nhiễu. Vì vậy ta còn phải thực hiện thêm một bước nữa, đó là phân ngưỡng (thresholding). Sau bước này, ta sẽ thu được một bức ảnh với giá trị mỗi pixel là một giá trị nhị phân (0 nếu pixel không phải là cạnh và 1 nếu pixel là cạnh).</p>
 <h2 id="4-phương-pháp-đạo-hàm-cấp-hai-cho-bài-toán-nhận-diện-cạnh"><a class="header" href="#4-phương-pháp-đạo-hàm-cấp-hai-cho-bài-toán-nhận-diện-cạnh">4. Phương pháp đạo hàm cấp hai cho bài toán nhận diện cạnh</a></h2>
 <p>Ở phương pháp trên, ta tính độ lớn gradient tại mỗi pixel rồi dùng một ngưỡng để xác định một pixel có phải là một cạnh hay không, dẫn đến việc có quá nhiều pixel được nhận diện là cạnh. Để khắc phục hạn chế này, một cách tiếp cận khác là đối với nhiều điểm cạnh nằm kề nhau, ta chỉ nhận những pixel có độ lớn gradient đạt cực đại cục bộ (local maxima). Ta cũng biết rằng, giá trị cực đại của đạo hàm cấp một tương đương với giao điểm của đạo hàm cấp hai và trục hoành, điểm này còn được gọi là điểm về không (zero crossing).</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/First_Derivative_and_Second_Derivative_of_Edges.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/First_Derivative_and_Second_Derivative_of_Edges.png" alt="" /></p>
 <p><em>Hình 9: Đồ thị đầu tiên biểu diễn giá trị mức độ xám của mỗi pixel trong không gian 1 chiều (xem giá trị này là một hàm liên tục), đồ thị thứ hai là đạo hàm cấp một của giá trị này, đồ thị cuối cùng là đạo hàm cấp hai của giá trị này. Ảnh tham khảo <a href="http://csundergrad.science.uoit.ca/courses/cv-notes/notebooks/08-edge-detection.pdf">tại đây</a>.</em></p>
 <p>Có hai toán tử gắn với đạo hàm cấp hai trong không gian hai chiều: toán tử Laplacian (Laplacian operator) và toán tử đạo hàm cấp hai có hướng (second directional derivative)</p>
 <h3 id="41-toán-tử-laplacian"><a class="header" href="#41-toán-tử-laplacian">4.1. Toán tử Laplacian</a></h3>
@@ -490,18 +321,18 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
 <h2 id="5-phương-pháp-tìm-cạnh-trên-ảnh-nhiễu"><a class="header" href="#5-phương-pháp-tìm-cạnh-trên-ảnh-nhiễu">5. Phương pháp tìm cạnh trên ảnh nhiễu</a></h2>
 <h3 id="51-Ảnh-hưởng-của-nhiễu-đến-đạo-hàm"><a class="header" href="#51-Ảnh-hưởng-của-nhiễu-đến-đạo-hàm">5.1. Ảnh hưởng của nhiễu đến đạo hàm</a></h3>
 <p>Để có thể hình dung rõ ràng hơn về tầm ảnh hưởng của nhiễu đến bài toán nhận diện cạnh, chúng ta hãy cùng nhau quan sát bức hình dưới đây. Lưu ý rằng chúng ta đang giả sử bức ảnh ta đang xét là 1D.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Effect_of_Noise_a.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Effect_of_Noise_a.png" alt="" /></p>
 <p><em>Hình 10: Hình 1, 2: Đồ thị biểu diễn một cạnh và đạo hàm cấp một của của nó. Hình 3, 4: Đồ thị biểu diễn cạnh tương ứng đã được thêm nhiễu và đạo hàm cấp một của nó. Ảnh tham khảo <a href="https://cs.brown.edu/people/pfelzens/engn1610/edge-pics.pdf">tại đây</a>.</em></p>
 <p>Ta thấy rằng với sự xuất hiện của nhiễu, ta không thể xác định đâu là vị trí của cạnh dựa trên đồ thị đạo hàm nữa.</p>
 <p>Để khắc phục tình trạng này, ta sử dụng Gaussian filter để loại bỏ nhiễu trước khi tính đạo hàm. Kết quả thu được khả quan hơn rất nhiều:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Effect_of_noise_b.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Effect_of_noise_b.png" alt="" /></p>
 <p><em>Hình 11: Đồ thị biểu diễn cạnh sau khi được khử nhiễu bởi Gaussian filter và đạo hàm cấp một của nó. Ảnh tham khảo <a href="https://cs.brown.edu/people/pfelzens/engn1610/edge-pics.pdf">tại đây</a>.</em></p>
 <h3 id="52-Đạo-hàm-của-gaussian-derivative-of-gaussian"><a class="header" href="#52-Đạo-hàm-của-gaussian-derivative-of-gaussian">5.2. Đạo hàm của Gaussian (Derivative of Gaussian)</a></h3>
 <p>Một cách tự nhiên, ta rút ra quy trình tìm đạo hàm của bức ảnh như sau: dùng Gaussian kernel để thực hiện phép tích chập lên ảnh đang bị nhiễu, sau đó tính đạo hàm đối với bức ảnh đã được khử nhiễu.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Derivative_Theorem_of_Convolution.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Derivative_Theorem_of_Convolution.png" alt="" /></p>
 <p><em>Hình 12: Các bước của một bài toán nhận diện cạnh đối với ảnh nhiễu (Cách 1: Lấy đạo hàm của ảnh sau khi đã áp dụng Gaussian filter cho ảnh). Ảnh tham khảo <a href="http://vision.stanford.edu/teaching/cs131_fall1718/files/05_edges.pdf">tại đây</a>.</em></p>
 <p>Tuy nhiên, ta có thể rút gọn quy trình này bằng cách lấy đạo hàm của Gaussian kernel để tạo thành một kernel mới, sau đó dùng phép tích chập đối với kernel này và bức ảnh gốc (có chứa nhiễu). Quy trình này giúp ta tiết kiệm một lượng lớn thời gian vì thông thường kích thước của bức ảnh lớn hơn kích thước của kernel rất nhiều. Một trường hợp mà việc lấy đạo hàm của Gaussian kernel đặc biệt hữu dụng đó là khi ta muốn áp dụng kernel này cho nhiều bức ảnh khác nhau.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Derivative_Theorem_of_Convolution_b.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Derivative_Theorem_of_Convolution_b.png" alt="" /></p>
 <p><em>Hình 13: Các bước của một bài toán nhận diện cạnh đối với ảnh nhiễu (Cách 2: Lấy đạo hàm của Gaussian kernel, sau đó mới áp dụng kernel này cho ảnh). Ảnh tham khảo <a href="http://vision.stanford.edu/teaching/cs131_fall1718/files/05_edges.pdf">tại đây</a>.</em></p>
 <p>Việc rút gọn này dựa trên tính tuyến tính của phép tích chập (chúng ta sẽ không đi sâu vào chứng minh công thức này), cụ thể:</p>
 <p>$$ \frac{d}{dx}(g*f) = \left(\frac{d}{dx}g\right)*f $$</p>
@@ -518,31 +349,31 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
 <p>Suy ra</p>
 <p>$$ \begin{aligned} \nabla^2g(x,y) &amp; = \frac{1}{2 \pi \sigma^2}(\frac{x^2}{\sigma^4} - \frac{1}{\sigma^2})e^{-\frac{x^2+y^2}{2 \sigma^2}} + \frac{1}{2 \pi \sigma^2}(\frac{y^2}{\sigma^4} - \frac{1}{\sigma^2})e^{-\frac{x^2+y^2}{2 \sigma^2}} \\ &amp; = -\frac{1}{\pi \sigma^4}\left( 1 -\frac{x^2 + y^2}{2 \sigma^2}\right)e^{-\frac{x^2+y^2}1{2\sigma^2}}\end{aligned} $$</p>
 <p>Thuật toán trên được gọi là Laplacian of Gausian (LoG) hay Marr-Hildreth detector (thuật toán được đề xuất bởi D. Marr và E. Hildreth vào năm 1980). Toán tử LoG còn được gọi là toán tử Mexican Hat vì hình dạng đặc biệt của nó:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Mexican_Hat.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Mexican_Hat.png" alt="" /></p>
 <p><em>Hình 14: Hình dạng của Gaussian kernel sau khi được áp dụng toán tử Laplacian giống như một chiếc mũ. Ảnh tham khảo <a href="https://hannibunny.github.io/orbook/preprocessing/04gaussianDerivatives.html">tại đây</a>.</em></p>
 <h2 id="6-canny-edge-detector"><a class="header" href="#6-canny-edge-detector">6. Canny Edge Detector</a></h2>
 <p>Được phát triển bởi John F. Canny vào năm 1986, thuật toán Canny Edge Detection cho đến nay vẫn là một trong những thuật toán nhận diện cạnh được sử dụng phổ biến nhất vì tính hiệu quả của nó.</p>
 <p>Trước khi đi vào thuật toán cụ thể, chúng ta cùng nhau tìm hiểu một vài khái niệm nhé!</p>
 <h3 id="61-non-maxima-suppression"><a class="header" href="#61-non-maxima-suppression">6.1. Non-maxima suppression</a></h3>
 <p>Như chúng ta đã biết, việc sử dụng đạo hàm cấp một cho bài toán nhận diện cạnh đòi hỏi ta phải xác định một ngưỡng nhất định để nhận diện một pixel với độ lớn gradient bất kì có là cạnh hay không. Đây là công việc khá đau đầu bởi nếu chọn một ngưỡng thấp, sẽ có rất nhiều pixel được nhận diện là cạnh, đặc biệt ở những nơi mà sự thay đổi đạo hàm diễn ra một cách từ từ do cạnh đã bị làm mờ khi lọc nhiễu hoặc do hạn chế nhất định của các loại máy ảnh. Nhưng nếu chọn một ngưỡng cao, ta sẽ bị mất rất nhiều pixel lẽ ra phải được dự đoán là cạnh. Bạn đọc có thể tham khảo bức hình bên dưới.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Where_is_the_Edge.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Where_is_the_Edge.png" alt="" /></p>
 <p><em>Hình 15: Ảnh thu được sau khi tính toán độ lớn gradient của từng pixel trong ảnh gốc. Ảnh tham khảo <a href="https://cs.brown.edu/people/pfelzens/engn1610/edge-pics.pdf">tại đây</a>.</em></p>
 <p>Trong bài toán nhận diện cạnh thì việc xác định chính xác vị trí của cạnh là cần thiết. Trong bức ảnh trên, chúng ta không biết phải chọn ngưỡng như thế nào để vừa có thể thu hẹp được độ rộng của cạnh, vừa tránh không để bị mất cạnh ở những nơi khác.</p>
 <p>Ở trên chúng ta đã tìm hiểu một toán tử giúp nhận diện cạnh chỉ tại những vị trí mà độ lớn gradient đạt cực đại, đó là toán tử Laplacian, tuy nhiên toán tử này rất dễ bị ảnh hưởng bởi nhiễu: chỉ một dao động nhỏ trong đạo hàm cấp một cũng tạo thành điểm về không trong đạo hàm cấp hai. Một kĩ thuật khác cũng giúp ta giải quyết được vấn đề này đó là Non-maxima suppression. Non-maxima suppression tận dụng thêm một thông tin nữa: hướng của gradient (ở phần trên, ta biết rằng tại mỗi pixel ta đều tính được độ lớn và hướng của gradient). Từ đó kết quả thu được từ non-maxima suppression ít nhiễu hơn kết quả từ Laplacian bởi nó không lấy cực đại của độ lớn gradient theo mọi hướng mà chỉ theo một hướng nhất định, hay nói cách khác, thuật toán này không lấy các điểm về không theo mọi hướng mà chỉ theo một hướng duy nhất đối với mỗi pixel: hướng của gradient, hay hướng vuông góc với hướng của &quot;cạnh&quot; đang xét.</p>
 <p>Hình dưới đây giúp ta hình dung rõ hơn về thuật toán này:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Nonmaxima_Suppressioin.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Nonmaxima_Suppressioin.png" alt="" /></p>
 <p><em>Hình 16: Ví dụ về thuật toán non-maxima suppression. Pixel ở vị trí chấm xanh trong hình thứ nhất được giữ lại để xét cạnh, pixel tương ứng trong hình thứ hai thì không. Ảnh tham khảo <a href="http://csundergrad.science.uoit.ca/courses/cv-notes/notebooks/08-edge-detection.pdf">tại đây</a>.</em></p>
 <p>Ở trường hợp đầu tiên, pixel ta đang xét có giá trị độ lớn gradient đạt cực đại theo hướng gradient của pixel này (ta có thể biết giá trị này có đạt cực đại hay không bằng cách so sánh pixel này với hai pixel lân cận theo hướng tương ứng). Vì thế, ta giữ lại pixel này, để ý rằng giá trị tại pixel này không đổi trước và sau nonmaxima suppression. Ở trường hợp thứ hai, do pixel này có giá trị độ lớn gradient nhỏ hơn pixel bên phải của nó theo hướng gradient, nên ta không giữ lại pixel này cho bước tiếp theo. Sau non-maxima suppression, giá trị của pixel này được đặt về 0. Lưu ý rằng thuật toán non-maxima suppression chỉ cho đầu ra là liệu một pixel có được tiếp tục giữ lại để xét là cạnh hay không, nó không đảm bảo các pixel được giữ lại thì chắc chắn là cạnh.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Non-maxima-suppression-result.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Non-maxima-suppression-result.png" alt="" /></p>
 <p><em>Hình 17: Ảnh thu được trước và sau non-maxima suppression. Ảnh tham khảo <a href="http://csundergrad.science.uoit.ca/courses/cv-notes/notebooks/08-edge-detection.pdf">tại đây</a>.</em></p>
 <h3 id="62-hysteresis-thresholding"><a class="header" href="#62-hysteresis-thresholding">6.2. Hysteresis thresholding</a></h3>
 <p>Quay lại vấn đề chọn ngưỡng: việc chọn một ngưỡng cao hay thấp luôn là một sự đánh đổi giữa số lượng cạnh là false positives và false negatives mà ta sẽ thu được. Thuật toán hysteresis thresholding được đưa ra nhằm giúp ta giải quyết vấn đề này.</p>
 <p>Ý tưởng của hysteresis thresholding là ta sẽ chọn 2 ngưỡng thay vì 1 ngưỡng: các pixel có giá trị nằm trên ngưỡng cao thì chắc chắn là cạnh (sure-edge pixel), các pixel có giá trị nằm dưới ngưỡng thấp thì chắc chắn không là cạnh. Sau đó ta bắt đầu xét các pixel nằm giữa hai ngưỡng này, những pixel nào là lân cận của các &quot;sure-edge pixel&quot; sẽ được nhận diện là cạnh, điều ngược lại đối với những pixel không là lân cận của &quot;sure-edge pixel&quot; nào cả.</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Hysteresis_Thresholding.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Hysteresis_Thresholding.png" alt="" /></p>
 <p><em>Hình 18: Ví dụ về thuật toán hysteresis thresholding. Ảnh tham khảo <a href="https://theailearner.com/tag/hysteresis-thresholding/">tại đây</a>.</em></p>
 <p>Quan sát hình trên, ta thấy rằng A và B chắc chắn là cạnh vì giá trị của chúng cao hơn ngưỡng trên, D chắc chắn không là cạnh vì giá trị của nó thấp hơn ngưỡng dưới, C và E có giá trị nằm giữa hai ngưỡng, tuy nhiên C là cạnh do nó là lân cận của B, còn E thì không.</p>
 <p>Chúng ta cùng so sánh thuật toán hysteresis thresholding với cách chọn ngưỡng thông thường:</p>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Hysteresis_thresholding_result.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Hysteresis_thresholding_result.png" alt="" /></p>
 <p><em>Hình 19: Hình 1: Kết quả thu được khi áp dụng hysteresis thresholding. Hình 2: Kết quả thu được khi chỉ dùng một ngưỡng cao. Hình 3: Kết quả thu được khi chỉ dùng một ngưỡng thấp.</em></p>
 <p>Ta thấy rằng thuật toán hysteresis thresholding vừa đảm bảo không bị nhận diện thiếu quá nhiều cạnh như trong hình thứ hai, vừa giảm thiểu nhiễu như trong hình thứ ba.</p>
 <h3 id="63-thuật-toán-canny-edge-detection"><a class="header" href="#63-thuật-toán-canny-edge-detection">6.3. Thuật toán Canny Edge Detection</a></h3>
@@ -553,7 +384,7 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
 <li>Dùng non-maxima suppresion để &quot;làm mỏng&quot; cạnh, tức loại bỏ các pixel không cần thiết</li>
 <li>Dùng hysteresis thresholding để nhận diện cạnh</li>
 </ol>
-<p><img src="test-convert-html-to-markdown/images/2023/knowledge_sharing/Canny_Edge_Detector_result.png" alt="" /></p>
+<p><img src="images/2023/knowledge_sharing/Canny_Edge_Detector_result.png" alt="" /></p>
 <p><em>Hình 20: Kết quả thu được của thuật toán Canny Edge Detection đối với các cách chọn ngưỡng khác nhau. Hình 1: Kết quả thu được sau khi tính toán độ lớn gradient (ảnh được sử dụng để phân ngưỡng). Hình 2, 3, 4: Kết quả thu được sau khi áp dụng hysteresis thresholding với các ngưỡng $T_1$, $T_2$ khác nhau.</em></p>
 <p>Một số lưu ý:</p>
 <ul>
@@ -577,12 +408,18 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../user-guides/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../user-guides/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
             </nav>
 
         </div>
@@ -590,18 +427,13 @@ $$ \alpha(x,y) = \tan^{-1}\left( \frac{G_y}{G_x}\right) $$</p>
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
     </body>
 </html>
