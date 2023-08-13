@@ -8,3 +8,4 @@
   - [Github workflows settings](./devops/GithubWorkflow.md)
   - [Linux container (LXC)](./devops/LXCContainer.md)
 - [User guides](./user-guides/index.md)
+- [Edge detection](./test-convert-html-to-markdown/index.md)
